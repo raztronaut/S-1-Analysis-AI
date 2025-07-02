@@ -147,13 +147,65 @@ npm run build
 
 The built application will be in the `dist/` directory, ready for deployment to any static hosting service.
 
-## 📝 API Integration
+## 📝 API Integration & AI Architecture
 
-The application uses Google's Gemini AI for:
-- **Text Analysis**: Natural language processing of S-1 documents
-- **Data Extraction**: Structured extraction of financial metrics
-- **Financial Analysis**: Complex financial ratio calculations and insights
-- **Conversational AI**: Interactive chat capabilities
+### Core AI Engine
+The application is powered by **Google Gemini 2.5 Pro**, leveraging advanced large language model capabilities for sophisticated financial document analysis. All AI interactions are handled through the `@google/genai` library with structured prompting and response parsing.
+
+### Multi-Specialist AI Architecture
+The application employs a unique multi-agent approach for comprehensive financial analysis:
+
+#### 🎯 Specialized AI Analysts
+- **Profitability Analyst**: Calculates margins, gross profit ratios, and profitability metrics
+- **Growth Metrics Analyst**: Analyzes revenue growth, retention rates, and expansion metrics  
+- **Balance Sheet Analyst**: Evaluates liquidity ratios, debt-to-equity, and financial stability
+- **Trends Analyst**: Performs year-over-year comparative analysis across key metrics
+- **Risk & Strategy Analyst**: Identifies competitive advantages, dependencies, and regulatory risks
+- **Investigative Analyst**: Discovers hidden financial commitments and off-balance-sheet obligations
+- **IPO Specialist**: Analyzes use of proceeds, customer concentration, and share structures
+- **Cash Flow Analyst**: Evaluates burn rates, runway, and cash management
+
+#### 🔄 Synthesis Process
+A lead AI analyst combines insights from all specialists, cross-references findings against the original document, and generates a holistic financial health assessment.
+
+### AI-Powered Features
+
+#### 📊 **Summary & Q/A** (`analyzeQuery`)
+- **Dual-Analyst Approach**: Risk assessor + growth strategist personas for balanced analysis
+- **Confidence Scoring**: 0.0-1.0 confidence metrics based on source material clarity
+- **Citation Grounding**: Every claim backed by verbatim document quotes
+- **Temperature**: 0.1 for focused, factual responses
+
+#### 📈 **Data Extraction** (`extractData`)
+- **Chain-of-Thought Processing**: Systematic document scanning with step-by-step verification
+- **Structured Output**: JSON responses with figures, periods, numeric values, and units
+- **Precision Mode**: Temperature 0.0 for maximum accuracy in financial data extraction
+- **Multi-Format Support**: Handles percentages, dollar amounts, and various financial metrics
+
+#### 💬 **Interactive Chat** (`startChat` & streaming)
+- **Contextual Memory**: Maintains conversation history and document awareness
+- **Real-Time Streaming**: Progressive response generation for immediate feedback
+- **Rich Formatting**: Supports markdown, LaTeX formulas, tables, and citation tooltips
+- **Adaptive Temperature**: 0.2 for natural conversation while maintaining accuracy
+
+#### 💰 **Financial Analysis** (`performFinancialAnalysis`)
+- **Parallel Processing**: Multiple AI specialists analyze simultaneously for efficiency
+- **Comprehensive Scoring**: 0-100 financial health score with detailed justification
+- **Visual Data Generation**: Creates waterfall chart data and visualization metrics
+- **Cross-Validation**: Lead analyst verifies specialist findings against source document
+
+### AI Response Processing
+- **JSON Parsing**: Robust handling of AI responses with fallback error handling
+- **Citation Extraction**: Automatic parsing and formatting of document references
+- **Streaming Support**: Real-time response chunks for improved user experience
+- **Error Recovery**: Graceful handling of malformed AI responses with user feedback
+
+### Prompt Engineering Strategies
+- **System Instructions**: Detailed role-based prompts for each AI specialist
+- **Response Formatting**: Structured JSON schemas for consistent output parsing
+- **Citation Requirements**: Mandatory verbatim quotes for all factual claims
+- **Temperature Control**: Optimized settings per use case (0.0 for data, 0.2 for chat)
+- **Context Management**: Efficient document chunking and context window optimization
 
 ## 🤝 Contributing
 
