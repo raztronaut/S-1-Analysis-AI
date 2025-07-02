@@ -37,8 +37,6 @@ A sophisticated AI-powered tool for analyzing S-1 IPO filings using Google's Gem
 - **Hidden Insights**: AI-powered discovery of significant but buried financial information
 - **IPO-Specific Analysis**: Specialized insights on use of proceeds, customer concentration, and share structure
 
-![Financial Analysis Demo](docs/images/ss1.png)
-
 ### 💬 Interactive Chat
 - **Document-aware conversations**: Chat with the AI about the specific S-1 filing
 - **Contextual responses**: AI maintains context throughout the conversation
