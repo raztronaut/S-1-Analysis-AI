@@ -1,0 +1,6 @@
+{
+  "name": "S-1 Analyst AI",
+  "description": "An AI-powered application to analyze, summarize, and extract data from S-1 filings using a sophisticated financial analyst persona. Features include citation-based Q&A, data extraction, and an interactive chat interface.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
