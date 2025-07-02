@@ -5,11 +5,11 @@ A sophisticated AI-powered tool for analyzing S-1 IPO filings using Google's Gem
 ## 📸 Screenshots
 
 ### Financial Analysis Dashboard
-![Financial Analysis](docs/images/ss1.png)
+![Financial Analysis](docs/images/financialanalysis1.png)
 *Comprehensive financial health scoring, waterfall charts, and detailed ratio analysis*
 
 ### Application Interface
-![Application Interface](docs/images/ss2.png)
+![Application Interface](docs/images/financialanalysis2.png)
 *Clean, modern interface with sidebar navigation and multiple analysis tools*
 
 ## 🚀 Features
@@ -21,12 +21,14 @@ A sophisticated AI-powered tool for analyzing S-1 IPO filings using Google's Gem
 - **Citation Support**: Direct quotes from the document to support answers
 
 ### 📈 Data Extraction
+![Data Extraction](docs/images/dataextraction.png)
 - **Financial Metrics Extraction**: Extract key financial data points with automatic parsing
 - **Visual Charts**: Automatic chart generation for numeric data with 2+ data points
 - **Predefined Extractions**: One-click extraction for common metrics like revenue, net income, and operating expenses
 - **Period-based Analysis**: Track financial metrics across different time periods
 
 ### 💰 Financial Analysis
+![Financial Analysis](docs/images/financialanalysis3.png)
 - **Comprehensive Financial Health Score**: 0-100 scoring system with detailed ratings
 - **Waterfall Charts**: Visual representation of financial flows and changes
 - **Financial Ratios**: Automated calculation and analysis of:
@@ -38,6 +40,7 @@ A sophisticated AI-powered tool for analyzing S-1 IPO filings using Google's Gem
 - **IPO-Specific Analysis**: Specialized insights on use of proceeds, customer concentration, and share structure
 
 ### 💬 Interactive Chat
+![Interactive Chat](docs/images/chat.png)
 - **Document-aware conversations**: Chat with the AI about the specific S-1 filing
 - **Contextual responses**: AI maintains context throughout the conversation
 - **Streaming responses**: Real-time response generation for better user experience
